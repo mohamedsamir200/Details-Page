@@ -8,7 +8,7 @@ function Viewed() {
   return (
     <>
       <div className="footer-images mt-32">
-        <h1 className="font-bold text-2xl mb-5">Lorem, ipsum.</h1>
+        <h1 className="font-bold text-2xl mb-5">Products</h1>
         <div className="items grid grid-cols-autoFill gap-6">
           <div className="item ">
             <img src={footImage1} alt="item1 " />

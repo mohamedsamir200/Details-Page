@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link, Route, Routes } from "react-router-dom";
 import Description from "./../Description/Description";
 import Reviewss from "./../Reviewss/Reviewss";
 function Nav() {
@@ -16,7 +15,7 @@ function Nav() {
           </button>
           <button
             onClick={() => setShowDEsc(false)}
-            className="focus:bg-slate-900 focus:text-white p-3 rounded-lg"
+            className={`${!showDesc && "bg-slate-900 text-white"} p-3 rounded-lg`}
           >
             Reviews
           </button>

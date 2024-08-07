@@ -6,14 +6,14 @@ import slideImage2 from "../../assets/slider images/3.png";
 import slideImage3 from "../../assets/slider images/4.png";
 import slideImage4 from "../../assets/slider images/5.png";
 
+
 function Details() {
 
   const [selectedImage, setSelectedImage] = useState(mainImage);
-
   const [ count , setCount] = useState (1)
   const [price, setPrice] = useState(100)
 
-  const handleImage = (image) => {
+  function handleImage (image)  {
     if (selectedImage !== image) {
       setSelectedImage(image);
     }
@@ -81,13 +81,13 @@ function Details() {
                 <div className="box-counter ">
                     <p className="text-start my-1">Quantity</p>
                     <div className="bg-white w-[150px] flex justify-between items-center p-3 border border-gray-500 rounded-lg">
-                        <i className="fa fa-minus" onClick={()=>{
+                        <i className="fa fa-minus cursor-pointer" onClick={()=>{
                           if (count > 1 ){
                             setCount (count-1)
                           }
                         }}></i>
                         <span>{count}</span>
-                        <i className="fa fa-plus text-end" onClick={()=>setCount (count+1)}></i>
+                        <i className="fa fa-plus text-end cursor-pointer" onClick={()=>setCount (count+1)}></i>
                     </div>
                 </div>
 
