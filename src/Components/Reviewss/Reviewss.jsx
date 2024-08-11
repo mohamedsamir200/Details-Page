@@ -16,7 +16,7 @@ function Reviewss() {
   const [openModal, setOpenModal] = useState(false);
   const [updateTitle, setUpdateTitle] = useState("");
   const [updateDesc, setUpdateDesc] = useState("");
-  
+
   useEffect(() => {
     showReviews()
   }, [])
@@ -32,9 +32,7 @@ function Reviewss() {
       setTitleInput("");
       setDescInput("");
       setShowAlert(false); // Hide alert after successful submission
-
     }
-
   }
 
   // Close the alert
@@ -84,7 +82,7 @@ function Reviewss() {
         <h1 className="text-[#344054] font-bold">Customer Feedback</h1>
         <div className="rate grid  zeroToTo768:grid-cols-1 from768:grid-cols-3 gap-5  m-auto">
           <div className="product-rate bg-white p-5 rounded-lg flex justify-center items-center flex-col">
-            <h1 className="text-bold text-7xl text-[#164C96]">48</h1>
+            <h1 className="text-bold text-7xl text-[#164C96]">4.8</h1>
             <div className="rate-icon">
               <i class="fa-solid fa-star text-yellow-400"></i>
               <i class="fa-solid fa-star text-yellow-400"></i>

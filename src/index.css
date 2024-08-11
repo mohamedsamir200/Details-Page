@@ -7,3 +7,10 @@
         @apply w-[100%] ;
     }
 }
+
+@layer components {
+    .btn {
+      @apply bg-indigo-600 py-2 px-7 text-white rounded-lg;
+    }
+    
+  }
